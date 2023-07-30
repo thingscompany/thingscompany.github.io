@@ -1,0 +1,125 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Use flexbox layout to center the content vertically and horizontally */
+body.index,
+body.about,
+body.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  color: white;
+}
+
+/* Add the following styles to move the logo to the upper left corner */
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 150px;
+  height: auto;
+}
+
+/* Homepage with background image */
+body.index {
+  background-image: url("background.jpg"); /* Replace 'path/to/homepage-background.jpg' with the actual path to your homepage background image */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* About Us page with background image */
+body.about {
+  background-image: url("background.jpg"); /* Replace 'path/to/aboutus-background.jpg' with the actual path to your about us page background image */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Align navigation links to the top-right corner with a gap between each button */
+nav {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  padding: 20px;
+}
+
+/* Add a margin between each navigation link */
+nav a {
+  margin-right: 30px;
+  border-radius: 50px;
+  padding: 10px 20px;
+  background-color: transparent; /* Set the background color to transparent */
+  color: white; /* Set the text color for the buttons */
+  text-decoration: none; /* Remove underlines from links */
+  border: 2px solid #dedfe0; /* Add a border to the buttons */
+  transition: background-color 0.3s, color 0.3s; /* Add smooth transitions */
+}
+
+/* Add a hover effect to the buttons */
+nav a:hover {
+  background-color: #575f68; /* Change the background color on hover */
+  color: #fff; /* Change the text color on hover */
+}
+
+/* Add a line below the header */
+header {
+  border-bottom: 2px solid #171313;
+}
+
+/* Home and About Us buttons in the navigation */
+nav a:nth-child(1),
+nav a:nth-child(2){
+  color: white;
+}
+
+/* Style for the footer */
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0; /* Stick the footer to the bottom of the viewport */
+  width: 100%;
+  text-align: center;
+  background-color: transparent; /* Set the background color to transparent */
+  padding: 10px;
+}
+
+main {
+  text-align: justify;
+  padding: 0 20px; /* Add some padding to the sides for better readability */
+}
+
+/* styles.css */
+
+/* Other existing styles for the homepage, header, and footer */
+
+/* Styling for the app display section */
+.app-display {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+/* Styling for the application screenshot/image */
+.app-screenshot img {
+  max-width: 400px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Styling for the application description */
+.app-description {
+  flex: 1;
+  margin-left: 40px;
+}
+
+/* Add more styles for the app display and description if needed */
